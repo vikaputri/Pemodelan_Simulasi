@@ -1,5 +1,3 @@
 File-file tugas ketiga ini dapat juga dilihat di :
-github
-1. Bentuk notebooknya : https://github.com/Vputri/Pemodelan_Simulasi/blob/main/Tugas_3.ipynb
-2. Bentuk file python : https://github.com/Vputri/Pemodelan_Simulasi/tree/main/Tugas%203
+github : https://github.com/Vputri/Pemodelan_Simulasi/blob/main/https://github.com/Vputri/Pemodelan_Simulasi/tree/main/Tugas%203
 Google Colab  : https://colab.research.google.com/drive/1xJvJP_e6t9bnw-svZPUC7YiDEd9ySRgd?usp=sharing
