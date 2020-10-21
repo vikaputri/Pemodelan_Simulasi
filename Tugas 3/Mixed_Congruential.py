@@ -1,12 +1,6 @@
 print("Mixed Congruential Generator")
 print("=====================================\n")
 
-a = int(input('Input a :'))
-m = int(input('Input mod :'))
-c = int(input('Input c :'))
-s = int(input('Input seed :'))
-n = int(input('Input jumlah acak :'))
-
 def rand(a, m, c, seed):
 	x = []
 	x.append(seed)
@@ -14,6 +8,12 @@ def rand(a, m, c, seed):
 		rand = ((a * x[i])+ c) % m
 		x.append(rand)
 	return x[1:]
+
+a = int(input('Input a :'))
+m = int(input('Input mod :'))
+c = int(input('Input c :'))
+s = int(input('Input seed :'))
+n = int(input('Input jumlah acak :'))
 
 rand1 = rand(a, m, c, s)
 rand2 = [i/m for i in rand1]
