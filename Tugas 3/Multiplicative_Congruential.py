@@ -1,7 +1,7 @@
 print("Multiplicative Congruential Generator")
 print("=====================================\n")
 
-def rand(a, m, s):
+def rand(a, m, seed):
 	x = []
 	x.append(seed)
 	for i in range(n):
