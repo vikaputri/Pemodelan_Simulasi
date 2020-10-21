@@ -1,17 +1,34 @@
-print("Mixed Congruential Generator")
+print("Multiplicative Congruential Generator")
 print("=====================================\n")
 
-Xo = int(input("Masukkan Nilai Xo      : "))
-a = int(input("Masukkan Nilai a       : "))
-c = int(input("Masukkan Nilai c       : "))
-m = int(input("Masukkan Nilai m       : "))
-jmlRandom = int(input("Masukkan Jumlah Random : "))
-Nums = [0] * (jmlRandom) 
-Nums[0] = Xo 
+a = int(input('Input a :'))
+m = int(input('Input mod :'))
+c = int(input('Input c :'))
+s = int(input('Input seed :'))
+n = int(input('Input jumlah acak :'))
 
-print("\nJadi, dengan nilai Xo =", Xo,"Nilai a =", a,"Nilai c =", c,"dan Nilai m =", m)
-print("\nHasil Random adalah :")
+def rand(a, m, c, seed):
+	x = []
+	x.append(seed)
+	for i in range(n):
+		rand = ((a * x[i])+ c) % m
+		x.append(rand)
+	return x[1:]
 
-for i in range(1, jmlRandom): 
-    Nums[i] = ((Nums[i - 1] * a) + c) % m 
-    print(Nums[i], end = " ") 
+rand1 = rand(a, m, c, s)
+rand2 = [i/m for i in rand1]
+
+print()
+print('Hasil:')
+for i in range(len(rand1)):
+	print('X{} = {}; X = {}'.format(i+1, rand1[i], rand2[i]))
+
+k = n-1
+rand3 = []
+for i in range(k):
+	rand3.append(rand2[i] ** 2)
+
+rand4 = sum(rand3)
+print("")
+print(rand4)
+print(rand4/k)
