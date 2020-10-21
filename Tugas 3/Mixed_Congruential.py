@@ -1,4 +1,4 @@
-print("Multiplicative Congruential Generator")
+print("Mixed Congruential Generator")
 print("=====================================\n")
 
 a = int(input('Input a :'))
