@@ -22,13 +22,3 @@ print()
 print('Hasil:')
 for i in range(len(rand1)):
 	print('X{} = {}; X = {}'.format(i+1, rand1[i], rand2[i]))
-
-k = n-1
-rand3 = []
-for i in range(k):
-	rand3.append(rand2[i] ** 2)
-
-rand4 = sum(rand3)
-print("")
-print(rand4)
-print(rand4/k)
